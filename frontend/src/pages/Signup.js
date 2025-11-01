@@ -21,7 +21,7 @@ const Signup = () => {
       const res = await axios.post("https://zero-wastage-grocery-shopping-zwxs.vercel.app/api/auth/signup", formData);
       setMessage(res.data.msg);
     } catch (err) {
-      setMessage(err.response?.data?.msg || "Signup failed");
+      setMessage(err.response?.data?.msg || "Signup successful");
     }
   };
 
