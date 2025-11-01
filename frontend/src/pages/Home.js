@@ -14,7 +14,7 @@ const Home = () => {
   // Fetch products from backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://zero-wastage-grocery-backend.vercel.app/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("Error fetching products:", err));
   }, []);
